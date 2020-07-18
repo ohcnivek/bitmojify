@@ -55,13 +55,13 @@ def image_determinant(i):
         holidayName = us_holidays.get(dateStringRepresentation)
         print(holidayName)
         #adjust for all the holidays here
-    # elif json_data['deathIncrease'] > 15:
-    #     print("Cases are still increasing!!")
-    #     i = i.replace("check", listOfImageNames[2])  # changing the image to the masked bitmoji
-    #     print("this is the image used: " + listOfImageNames[2])
+    elif json_data['deathIncrease'] > 15:
+        print("Cases are still increasing!!")
+        i = i.replace("check", listOfImageNames[2])  # changing the image to the masked bitmoji
+        print("this is the image used: " + listOfImageNames[2])
     else:
         i = i.replace("check", listOfImageNames[index])
-        print(index)
+        print("index of the array its accessing for random: " + index)
         print("this is the image used: " + listOfImageNames[index])
     return i
 
