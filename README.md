@@ -2,8 +2,13 @@
 Add a fun yet relevant bitmoji to your resumé because why not &amp; generate a LaTex preview for your resume 
 
 ## Some things you'll need along the way
-1. LaTex - why? the resumé generated is a `.tex` file, and must be compiled. 
-- It can be downloaded here: `https://www.latex-project.org/get/`
+1. LaTex - why? Before the pdf of the resumé is generated, it is first a `.tex` file, which needs LaTex to be compile it.  
+- LaTex can be downloaded [here](https://www.latex-project.org/get/)
+
+2. Node.js - why? The script uses it to run `index.js` locally to retrieve the generated bitmoji
+- Node.js can be downloaded [here](https://nodejs.org/en/download/)
+
+3. You _need_ Python3. Otherwise, an imported library (urllib.request) will cause issues
 
 ## How do I use this epic script?
 1. Clone the libmoji repo onto your local machine: 
@@ -11,8 +16,7 @@ Add a fun yet relevant bitmoji to your resumé because why not &amp; generate a 
     
 2. Install with `npm install libmoji`
 3. Run python script, `python3 bitmoji.py`
-- This will generate a file, `resume.tex` which when compiled will have a random bitmoji at the top right corner 
-
+- This will generate a file, `myresume.tex` which when compiled to a pdf will have a random bitmoji at the top right corner 
 
 ## Other very helpful repos/ how to contribute 
 1. Use the doc2tex repo: `https://github.com/transpect/docx2tex`

@@ -64,12 +64,12 @@ def image_determinant(i):
         holidayName = us_holidays.get(dateStringRepresentation)
         print(holidayName)
         #adjust for the different holidays here
-    #TODO adjust this method for the spacing and scaling too if im using the default and not the randomly generated bitmoji
-
-    # elif json_data['deathIncrease'] > 15:
-    #     print("Cases are still increasing!!")
-    #     i = i.replace("check", listOfImageNames[2])  # changing the image to the masked bitmoji
-    #     print("this is the image used: " + listOfImageNames[2])
+    elif json_data['deathIncrease'] > 1000:
+        print("Cases are still increasing!!")
+        i = i.replace("480,645", "450,680")
+        i = i.replace("scale = .14", "scale = .25")
+        i = i.replace("check", listOfImageNames[2])
+        print("this is the image used: " + listOfImageNames[2])
     else:
         i = i.replace("check", 'generatedLibmoji')
         print("this is the image used: " + 'generatedLibmoji')
