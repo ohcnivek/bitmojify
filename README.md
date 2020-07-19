@@ -5,7 +5,7 @@ Add a fun yet relevant bitmoji to your resumé because why not &amp; generate a 
 1. LaTex - why? Before the pdf of the resumé is generated, it is first a `.tex` file, which needs LaTex to be compile it.  
 - Can be downloaded [here](https://www.latex-project.org/get/)
 
-2. Node.js - why? The `bitmoij.py` uses it to run `index.js` locally to retrieve the generated bitmoji
+2. Node.js - why? `bitmoij.py` uses it to run `index.js` locally to retrieve the generated bitmoji
 - Can be downloaded [here](https://nodejs.org/en/download/)
 
 3. You _need_ Python3. Otherwise, an imported library (urllib.request) will cause issues
