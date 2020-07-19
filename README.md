@@ -24,6 +24,5 @@ navigate to your python3.8 folder and run the following scripts by simply clicki
 `Install Certificates.command` and
 `Update Shell Profile.command`
 
-- If you'res still running into issues with this, check this answer out on [StackOverflow] {https://stackoverflow.com/questions/50236117/scraping-ssl-certificate-verify-failed-error-for-http-en-wikipedia-org
-} 
+- If you'res still running into issues with this, check this answer out on [StackOverflow](https://stackoverflow.com/questions/50236117/scraping-ssl-certificate-verify-failed-error-for-http-en-wikipedia-org)
 
