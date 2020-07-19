@@ -5,6 +5,9 @@ from datetime import date
 from pprint import pprint
 import requests
 import holidays
+import subprocess
+import urllib.request
+
 
 # for holidays, sporting events
 today = date.today()
@@ -39,7 +42,6 @@ toAdd = readfile.readlines()
 # cumulative list of names
 listOfImageNames = ['check', 'rain', 'mask']
 
-
 def a_tex_file():
     substring = "check"  # this is the default bitmoji in skeleton.tex
     for i in toAdd:
@@ -54,7 +56,7 @@ def image_determinant(i):
     if date(int(year), int(month), int(day)) in us_holidays:
         holidayName = us_holidays.get(dateStringRepresentation)
         print(holidayName)
-        #adjust for all the holidays here
+        #adjust for the different holidays here
     elif json_data['deathIncrease'] > 15:
         print("Cases are still increasing!!")
         i = i.replace("check", listOfImageNames[2])  # changing the image to the masked bitmoji
@@ -69,8 +71,20 @@ def image_determinant(i):
 a_tex_file()
 
 
-# automatically compiles pdf file for you
+# automatically compiles with updated pdf file
 os.system("pdflatex myresume.tex")
+
+# running index.js and getting the link from the output
+encoding = 'utf-8'
+output = subprocess.check_output("node index.js", shell=True)
+strLinkToBitmoji = str(output, encoding)
+
+f = open('test.jpg', 'wb')
+
+# if you runinto an issue with certififcate verification:
+# https://stackoverflow.com/questions/50236117/scraping-ssl-certificate-verify-failed-error-for-http-en-wikipedia-org
+f.write(urllib.request.urlopen(strLinkToBitmoji).read())
+f.close()
 
 # os.system('tex '+ opfile)
 # os.system('xdvi ' + filename + '.dvi & ')
