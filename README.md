@@ -16,7 +16,7 @@ Add a fun yet relevant bitmoji to your resumé because why not &amp; generate a 
     
 2. Install with `npm install libmoji`
 3. Run python script, `python3 bitmoji.py`
-- This will generate a file, `myresume.tex` which when compiled to a pdf will have a random bitmoji at the top right corner 
+- This will generate a file, `myresume.tex` which when compiled to `myresume.pdf` (the script automatially does this) will have a random bitmoji on the top right corner 
 
 ## Other very helpful repos/ how to contribute 
 1. Use the doc2tex repo: `https://github.com/transpect/docx2tex`
