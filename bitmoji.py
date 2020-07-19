@@ -8,8 +8,18 @@ import holidays
 import subprocess
 import urllib.request
 
+# RUNNING & GENERATING: index.js and getting the link from the output
+encoding = 'utf-8'
+output = subprocess.check_output("node index.js", shell=True)
+strLinkToBitmoji = str(output, encoding)
 
-# for holidays, sporting events
+f = open('generatedLibmoji.jpg', 'wb')
+
+f.write(urllib.request.urlopen(strLinkToBitmoji).read())
+f.close()
+
+
+# for holidays
 today = date.today()
 print("Today's date:", today)  # format: 2020-07-18
 dateStringRepresentation = str(today)
@@ -57,14 +67,13 @@ def image_determinant(i):
         holidayName = us_holidays.get(dateStringRepresentation)
         print(holidayName)
         #adjust for the different holidays here
-    elif json_data['deathIncrease'] > 15:
-        print("Cases are still increasing!!")
-        i = i.replace("check", listOfImageNames[2])  # changing the image to the masked bitmoji
-        print("this is the image used: " + listOfImageNames[2])
+    # elif json_data['deathIncrease'] > 15:
+    #     print("Cases are still increasing!!")
+    #     i = i.replace("check", listOfImageNames[2])  # changing the image to the masked bitmoji
+    #     print("this is the image used: " + listOfImageNames[2])
     else:
-        i = i.replace("check", listOfImageNames[index])
-        print("index of the array its accessing for random: " + index)
-        print("this is the image used: " + listOfImageNames[index])
+        i = i.replace("check", 'generatedLibmoji')
+        print("this is the image used: " + 'generatedLibmoji')
     return i
 
 
@@ -74,17 +83,4 @@ a_tex_file()
 # automatically compiles with updated pdf file
 os.system("pdflatex myresume.tex")
 
-# running index.js and getting the link from the output
-encoding = 'utf-8'
-output = subprocess.check_output("node index.js", shell=True)
-strLinkToBitmoji = str(output, encoding)
 
-f = open('test.jpg', 'wb')
-
-# if you runinto an issue with certififcate verification:
-# https://stackoverflow.com/questions/50236117/scraping-ssl-certificate-verify-failed-error-for-http-en-wikipedia-org
-f.write(urllib.request.urlopen(strLinkToBitmoji).read())
-f.close()
-
-# os.system('tex '+ opfile)
-# os.system('xdvi ' + filename + '.dvi & ')

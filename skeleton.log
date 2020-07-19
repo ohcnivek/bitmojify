@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.4.7)  19 JUL 2020 04:33
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.4.7)  19 JUL 2020 04:31
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**myresume.tex
-(./myresume.tex
+**skeleton.tex
+(./skeleton.tex
 LaTeX2e <2020-02-02> patch level 5
 L3 programming layer <2020-03-06> (./resume.cls
 Document Class: resume 2010/07/10 v0.9 Resume class
@@ -132,8 +132,8 @@ File: l3backend-pdfmode.def 2020-03-12 L3 backend support: PDF mode
 \l__kernel_color_stack_int=\count179
 \l__pdf_internal_box=\box47
 )
-(./myresume.aux)
-\openout1 = `myresume.aux'.
+No file skeleton.aux.
+\openout1 = `skeleton.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 38.
 LaTeX Font Info:    ... okay on input line 38.
@@ -149,7 +149,6 @@ LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 38.
 LaTeX Font Info:    ... okay on input line 38.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 38.
 LaTeX Font Info:    ... okay on input line 38.
-
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
 *geometry* verbose mode - [ preamble ] result:
@@ -218,30 +217,30 @@ Overfull \hbox (30.0pt too wide) in paragraph at lines 38--38
 [] 
  []
 
-<generatedLibmoji.jpg, id=1, 662.475pt x 972.63374pt>
-File: generatedLibmoji.jpg Graphic file (type jpg)
-<use generatedLibmoji.jpg>
-Package pdftex.def Info: generatedLibmoji.jpg  used on input line 118.
-(pdftex.def)             Requested size: 92.74586pt x 136.16779pt.
+<check.png, id=1, 399.4925pt x 399.4925pt>
+File: check.png Graphic file (type png)
+<use check.png>
+Package pdftex.def Info: check.png  used on input line 118.
+(pdftex.def)             Requested size: 55.92856pt x 55.92856pt.
 [1
 
-{/usr/local/texlive/2020/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <./gener
-atedLibmoji.jpg>] (./myresume.aux) ) 
+{/usr/local/texlive/2020/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <./check
+.png>] (./skeleton.aux) ) 
 Here is how much of TeX's memory you used:
- 3124 strings out of 480608
- 44376 string characters out of 5903631
- 300471 words of memory out of 5000000
- 18996 multiletter control sequences out of 15000+600000
+ 3119 strings out of 480608
+ 44244 string characters out of 5903631
+ 300460 words of memory out of 5000000
+ 18994 multiletter control sequences out of 15000+600000
  536337 words of font info for 37 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  41i,12n,41p,874b,218s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/local/texlive/2020/texmf-dist/fonts/t
-ype1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2020/texmf-dist/fonts/ty
-pe1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2020/texmf-dist/fonts/typ
-e1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1
-/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/
-public/amsfonts/cm/cmti10.pfb>
-Output written on myresume.pdf (1 page, 178417 bytes).
+</usr/local/texlive/2020/texmf-dist/fonts/type1/public
+/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/
+amsfonts/cm/cmbx12.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/a
+msfonts/cm/cmr10.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/ams
+fonts/cm/cmsy10.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsf
+onts/cm/cmti10.pfb>
+Output written on skeleton.pdf (1 page, 107077 bytes).
 PDF statistics:
  31 PDF objects out of 1000 (max. 8388607)
  20 compressed objects within 1 object stream
