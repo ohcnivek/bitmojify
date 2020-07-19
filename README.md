@@ -16,8 +16,7 @@ Add a fun yet relevant bitmoji to your resumé because why not &amp; generate a 
 
 ## Other very helpful repos/ how to contribute 
 1. Use the doc2tex repo: `https://github.com/transpect/docx2tex`
-- You can use this generate your own skeleton preview of the latex file. With this, you can simply replace the `skeleton.tex` file
-so that it actually generates a resumé tailored to you :)
+- With this, you can simply replace the `skeleton.tex` file with a new skeleton file that contains the contents of your resumé so that it actually generates a resumé tailored to you :) Maybe in the future, I'll find a way to integrate this into the project
 
 2. If the python script generates the following error: `SSL: CERTIFICATE_VERIFY_FAILED`, 
 navigate to your python3.8 folder and run the following scripts by simply clicking on them:
