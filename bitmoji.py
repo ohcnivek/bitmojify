@@ -14,7 +14,6 @@ output = subprocess.check_output("node index.js", shell=True)
 strLinkToBitmoji = str(output, encoding)
 
 f = open('generatedLibmoji.jpg', 'wb')
-
 f.write(urllib.request.urlopen(strLinkToBitmoji).read())
 f.close()
 
@@ -23,15 +22,12 @@ f.close()
 today = date.today()
 print("Today's date:", today)  # format: 2020-07-18
 dateStringRepresentation = str(today)
-# dateStringRepresentation = "2020-07-04" // for checking validity
+# dateStringRepresentation = "2020-07-04" // TEST for checking validity
 
 year = dateStringRepresentation[0:4]
 month = dateStringRepresentation[5:7]
 day = dateStringRepresentation[8:]
 us_holidays = holidays.UnitedStates()
-print(year)
-print(month)
-print(day)
 
 # https://covidtracking.com/data/api
 # covid api access START
@@ -52,6 +48,7 @@ toAdd = readfile.readlines()
 # cumulative list of names
 listOfImageNames = ['check', 'rain', 'mask']
 
+
 def a_tex_file():
     substring = "check"  # this is the default bitmoji in skeleton.tex
     for i in toAdd:
@@ -67,6 +64,8 @@ def image_determinant(i):
         holidayName = us_holidays.get(dateStringRepresentation)
         print(holidayName)
         #adjust for the different holidays here
+    #TODO adjust this method for the spacing and scaling too if im using the default and not the randomly generated bitmoji
+
     # elif json_data['deathIncrease'] > 15:
     #     print("Cases are still increasing!!")
     #     i = i.replace("check", listOfImageNames[2])  # changing the image to the masked bitmoji

@@ -1,10 +1,3 @@
-/**
- * Need: 
- * 1. Clone Libmoji repo to local
- * 2. npm install libmoji
- * 
- */
-
 const libmoji = require("libmoji");
 
 let gender = libmoji.genders[libmoji.randInt(2)];
