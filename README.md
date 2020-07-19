@@ -1,7 +1,11 @@
 # Bitmojify
 Add a fun yet relevant bitmoji to your resumé because why not &amp; generate a LaTex preview for your resume 
 
-## how do i use this epic script
+## Some things you'll need along the way
+1. LaTex - why? the resumé generated is a `.tex` file, and must be compiled. 
+- It can be downloaded here: `https://www.latex-project.org/get/`
+
+## How do I use this epic script?
 1. Clone the libmoji repo onto your local machine: 
     `git clone https://github.com/matthewnau/libmoji.git`
     
@@ -10,7 +14,7 @@ Add a fun yet relevant bitmoji to your resumé because why not &amp; generate a 
 - This will generate a file, `resume.tex` which when compiled will have a random bitmoji at the top right corner 
 
 
-## helpful repos/ how to contribute 
+## Other very helpful repos/ how to contribute 
 1. Use the doc2tex repo: `https://github.com/transpect/docx2tex`
 - You can use this generate your own skeleton preview of the latex file. With this, you can simply replace the `skeleton.tex` file
 so that it actually generates a resumé tailored to you :)
