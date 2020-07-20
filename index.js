@@ -6,3 +6,5 @@ let traits = libmoji.randTraits(libmoji.getTraits(gender[0],style[0]));
 let outfit = libmoji.randOutfit(libmoji.getOutfits(libmoji.randBrand(libmoji.getBrands(gender[0]))));
 
 console.log(libmoji.buildPreviewUrl("fashion",3,gender[1],style[1],0,traits,outfit));
+
+
