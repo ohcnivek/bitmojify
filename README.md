@@ -20,8 +20,8 @@ Add a fun yet relevant bitmoji to your resumé because why not &amp; generate a 
     - This will generate the file, `myresume.tex`, which when compiled to `myresume.pdf` (the script automatially does this) will have a random bitmoji on the top right corner 
 
 ## Other very helpful repos/ how to contribute 
-1. doc2tex: `https://github.com/transpect/docx2tex`
-    - With this, you can simply replace the `skeleton.tex` file with a new skeleton file that contains the contents of your resumé so that it actually generates a resumé tailored to you :) Maybe in the future, I'll find a way to integrate this into the project
+1. [doc2tex](https://github.com/transpect/docx2tex)
+    - With this, you can fork this repo & simply replace the `skeleton.tex` file with a new skeleton file that contains the contents of your resumé so that it actually generates a resumé tailored to you :) Maybe in the future, I'll find a way to integrate this into the project. 
 
 2. If the python script generates the following error: `SSL: CERTIFICATE_VERIFY_FAILED`, 
 navigate to your python3.8 folder and run the following scripts:
