@@ -15,7 +15,9 @@ Add a fun yet relevant bitmoji to your resumé because why not &amp; generate a 
 ## How do I Bitmojify my resumé?
 1. Clone the libmoji repo onto your local machine: 
     `git clone https://github.com/matthewnau/libmoji.git`
+    
 2. Install with `npm install libmoji`
+
 3. Run python script, `python3 bitmoji.py`
     - This will generate the file, `myresume.tex`, which when compiled to `myresume.pdf` (the script automatially does this) will have a random bitmoji on the top right corner 
 
