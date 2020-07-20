@@ -3,16 +3,14 @@
 </p>
 
 # Bitmojify 😛
-Add a fun yet relevant bitmoji to your resumé because why not &amp; generate a `.pdf` preview of it using LaTex
+Add a fun yet relevant bitmoji to your resumé because why not &amp; generate a `.pdf` preview of it using LaTex.
 
 ## Some things you'll need along the way
-1. LaTex - why? Before the pdf of the resumé is generated, it is first a `.tex` file, which needs LaTex to be compile it.  
-    - Can be downloaded [here](https://www.latex-project.org/get/)
+1. LaTex - why? Before the `.pdf` version of the resumé is generated, the script first writes a `.tex` file, which needs LaTex in order to be compiled.  
+    - Download [here](https://www.latex-project.org/get/)
 
-2. Node.js - why? `bitmoij.py` uses it to run `index.js` locally to retrieve the generated bitmoji
-    - Can be downloaded [here](https://nodejs.org/en/download/)
-
-3. You _need_ Python3. Otherwise, an imported library (urllib.request) will cause issues
+2. Node.js - why? `bitmoij.py` uses it to run `index.js`
+    - Download [here](https://nodejs.org/en/download/)
 
 ## How do I Bitmojify my resumé?
 1. Clone the libmoji repo onto your local machine: 
@@ -30,5 +28,5 @@ navigate to your python3.8 folder and run the following scripts:
     - `Install Certificates.command`
     - `Update Shell Profile.command`
 
-    - If you'res still running into issues with this, check this answer out on [StackOverflow](https://stackoverflow.com/questions/50236117/scraping-ssl-certificate-verify-failed-error-for-http-en-wikipedia-org)
+    - If you're still running into issues with this, check this answer out on [StackOverflow](https://stackoverflow.com/questions/50236117/scraping-ssl-certificate-verify-failed-error-for-http-en-wikipedia-org)
 
