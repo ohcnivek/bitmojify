@@ -3,7 +3,7 @@
 </p>
 
 # Bitmojify 😛
-Add a fun yet relevant bitmoji to your resumé because why not &amp; generate a LaTex preview for your resume 
+Add a fun yet relevant bitmoji to your resumé because why not &amp; generate a `.pdf` preview of it using LaTex
 
 ## Some things you'll need along the way
 1. LaTex - why? Before the pdf of the resumé is generated, it is first a `.tex` file, which needs LaTex to be compile it.  
