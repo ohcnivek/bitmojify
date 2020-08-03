@@ -2,7 +2,7 @@
   <img src="https://sdk.bitmoji.com/render/panel/485d05c9-806d-4a57-b680-1721063a96ef-3243472b-d164-4e1a-8510-6b5c56f686ed-v1.png?transparent=1&palette=1" />
 </p>
 
-# bitmojify 😛
+# bitmojify
 Add a fun yet relevant bitmoji to your resumé because why not &amp; generate a `.pdf` preview of it using LaTex.
 
 ## Some things you'll need along the way
